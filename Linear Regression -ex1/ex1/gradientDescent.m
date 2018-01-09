@@ -18,7 +18,7 @@ for iter = 1:num_iters
     %
 
     
-    %Credits to Borye as I did not know what repmat does as of 1/2/18
+    %Credits to Borye as I did not know repmat is a thing in matlab
     delta = (1/m)*sum(X.*repmat((X*theta - y), 1, size(X,2)));
     
     
