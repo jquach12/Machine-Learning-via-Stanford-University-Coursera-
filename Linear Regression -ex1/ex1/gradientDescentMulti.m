@@ -17,7 +17,7 @@ for iter = 1:num_iters
     %       of the cost function (computeCostMulti) and gradient here.
     %
 
-    %Credits to Borye as I did not know what repmat does as of 1/2/18
+    %just the same as if it were singular 
     delta = (1/m)*sum(X.*repmat((X*theta - y), 1, size(X,2)));
     
     
